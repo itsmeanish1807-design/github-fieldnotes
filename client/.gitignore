@@ -32,6 +32,5 @@ dist-ssr
 coverage
 
 # Legacy standalone version
-/index.html
 /script.js
 /style.css
