@@ -3,32 +3,40 @@
 :root {
     font-family: 'DM Sans', sans-serif;
 
-    color: #F0EEE9;
-    background: #11161B;
+    color: #F4EDE0;
+    background: #14213D;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    --bg: #11161B;
-    --bg-secondary: #171E24;
+    /* Core palette */
+    --bg: #14213D;
+    --bg-secondary: #192A49;
 
-    --surface: #1C242B;
-    --surface-raised: #242D35;
+    /* Surfaces */
+    --surface: #1C2B45;
+    --surface-raised: #263955;
+    --card: #1C2B45;
 
-    --border: #35414A;
-    --border-light: #46535D;
+    /* Borders */
+    --border: rgba(244, 237, 224, 0.12);
+    --border-light: rgba(244, 237, 224, 0.20);
 
-    --text: #F0EEE9;
-    --muted: #929DA5;
+    /* Typography */
+    --text: #F4EDE0;
+    --muted: #B5C0D0;
+    --text-secondary: #B5C0D0;
 
-    --accent: #E59A62;
-    --accent-hover: #F2B17D;
-    --accent-soft: rgba(229, 154, 98, 0.12);
+    /* Accent */
+    --accent: #FF6B5B;
+    --accent-hover: #FF8275;
+    --accent-soft: rgba(255, 107, 91, 0.13);
 
-    --danger: #E47777;
+    --danger: #FF8A80;
 
+    /* Fonts */
     --font-heading: 'Manrope', sans-serif;
     --font-mono: 'DM Mono', monospace;
 
@@ -51,15 +59,15 @@ body {
 
     background:
         radial-gradient(
-            ellipse at 50% -15%,
-            rgba(229, 154, 98, 0.075),
-            transparent 42%
+            ellipse at 85% 5%,
+            rgba(255, 107, 91, 0.09),
+            transparent 38%
         ),
         linear-gradient(
             145deg,
-            #11161B 0%,
-            #151C22 48%,
-            #11161B 100%
+            #14213D 0%,
+            #172844 48%,
+            #14213D 100%
         );
 
     color: var(--text);
@@ -86,8 +94,8 @@ img {
 }
 
 ::selection {
-    background: rgba(229, 154, 98, 0.3);
-    color: #fff;
+    background: rgba(255, 107, 91, 0.3);
+    color: #FFFFFF;
 }
 
 :focus-visible {
@@ -100,16 +108,16 @@ img {
 }
 
 ::-webkit-scrollbar-track {
-    background: #11161B;
+    background: #14213D;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #35414A;
+    background: #344662;
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #56636D;
+    background: #526580;
 }
 
 @media (prefers-reduced-motion: reduce) {
