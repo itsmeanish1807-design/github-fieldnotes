@@ -87,7 +87,7 @@
     font-size: 10px;
     letter-spacing: 2px;
 
-    color: rgba(229, 154, 98, 0.6);
+    color: rgba(233, 120, 103, 0.6);
 }
 
 .eyebrow {
@@ -154,7 +154,7 @@
 
     padding: 9px 10px 9px 20px;
 
-    background: rgba(28, 36, 43, 0.85);
+    background: #1D2634;
 
     border: 1px solid var(--border);
     border-radius: 8px;
@@ -171,7 +171,7 @@
     background: var(--surface);
 
     box-shadow:
-        0 0 0 4px rgba(229, 154, 98, 0.08);
+        0 0 0 4px rgba(233, 120, 103, 0.08);
 }
 
 .search-box > span {
@@ -260,7 +260,7 @@
     border: 1px solid var(--border);
     border-radius: 8px;
 
-    background: rgba(28, 36, 43, 0.65);
+    background: #202B39;
 
     text-align: center;
 }
@@ -354,8 +354,8 @@
     background:
         linear-gradient(
             125deg,
-            rgba(36, 45, 53, 0.9),
-            rgba(28, 36, 43, 0.75)
+            rgba(38, 57, 85, 0.92),
+            rgba(28, 43, 69, 0.82)
         );
 
     border: 1px solid var(--border);
@@ -367,7 +367,7 @@
 }
 
 .profile-card:hover {
-    border-color: rgba(229, 154, 98, 0.45);
+    border-color: rgba(233, 120, 103, 0.45);
     transform: translateY(-3px);
 }
 
@@ -377,7 +377,7 @@
 
     object-fit: cover;
 
-    border: 2px solid rgba(229, 154, 98, 0.5);
+    border: 2px solid rgba(233, 120, 103, 0.5);
     border-radius: 8px;
 }
 
@@ -486,7 +486,7 @@
 
     padding: 23px;
 
-    background: rgba(28, 36, 43, 0.8);
+    background: #222D3B;
 
     border: 1px solid var(--border);
     border-radius: 8px;
@@ -563,7 +563,7 @@
 
     padding: 25px;
 
-    background: rgba(28, 36, 43, 0.8);
+    background:	#222D3B;
 
     border: 1px solid var(--border);
     border-radius: 8px;
@@ -730,8 +730,8 @@
 
     background: linear-gradient(
         90deg,
-        #BD7950,
-        #E59A62
+        #C66E60,
+        #E97867
     );
 
     border-radius: inherit;
@@ -819,7 +819,7 @@
 
     padding: 19px 21px;
 
-    background: rgba(28, 36, 43, 0.75);
+    background: 	#202B39;
 
     border: 1px solid var(--border);
     border-radius: 7px;
@@ -886,7 +886,7 @@
     border: 1px solid var(--border);
     border-radius: 7px;
 
-    background: rgba(28, 36, 43, 0.7);
+    background: #202B39;
 
     font-size: 13px;
 
@@ -1214,13 +1214,12 @@
 .shimmer {
     background: linear-gradient(
         90deg,
-        #242d35 25%,
-        #303b44 50%,
-        #242d35 75%
+        #222D3B 25%,
+        #303A46 50%,
+        #222D3B 75%
     );
 
     background-size: 200% 100%;
-
     animation: skeleton-shimmer 1.6s ease-in-out infinite;
 }
 
@@ -1333,7 +1332,7 @@
     height: 19px;
     margin-bottom: 22px;
     border-radius: 5px;
-    background: #303b44;
+    background: #303A46;
     animation: skeleton-shimmer 1.6s ease-in-out infinite;
     background-size: 200% 100%;
 }
@@ -1476,4 +1475,131 @@
         animation: none;
     }
 
+}
+
+/* =========================================
+   FIELDNOTES — EDITORIAL SURFACE REFINEMENT
+========================================= */
+
+/* SEARCH BAR */
+
+.search-box {
+    background: #1D2634;
+    border: 1px solid rgba(242, 235, 221, 0.14);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+.search-box:focus-within {
+    background: #222D3B;
+    border-color: rgba(233, 120, 103, 0.65);
+    box-shadow: 0 0 0 3px rgba(233, 120, 103, 0.09);
+}
+
+.search-box input {
+    color: #F2EBDD;
+}
+
+.search-box input::placeholder {
+    color: #929A9F;
+}
+
+.search-box button {
+    color: #171D29;
+    background: #E97867;
+}
+
+.search-box button:hover {
+    background: #F18B79;
+}
+
+/* PROFILE CARD */
+
+.profile-card {
+    background: linear-gradient(
+        135deg,
+        #26313F 0%,
+        #202B39 55%,
+        #1D2634 100%
+    );
+
+    border: 1px solid rgba(242, 235, 221, 0.13);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.profile-card:hover {
+    border-color: rgba(233, 120, 103, 0.45);
+    transform: translateY(-3px);
+}
+
+.avatar {
+    border-color: rgba(233, 120, 103, 0.55);
+}
+
+/* STATISTICS CARDS */
+
+.stat-card {
+    background: linear-gradient(
+        145deg,
+        #222D3B,
+        #1D2634
+    );
+
+    border-color: rgba(242, 235, 221, 0.10);
+}
+
+.stat-card:hover {
+    background: #293442;
+    border-color: rgba(233, 120, 103, 0.45);
+}
+
+/* REPOSITORY CARDS */
+
+.repo-card {
+    background: linear-gradient(
+        145deg,
+        #222D3B,
+        #1D2634
+    );
+
+    border-color: rgba(242, 235, 221, 0.10);
+}
+
+.repo-card:hover {
+    background: #293442;
+    border-color: rgba(233, 120, 103, 0.45);
+}
+
+/* ACTIVITY TIMELINE */
+
+.timeline-content {
+    background: #202B39;
+    border-color: rgba(242, 235, 221, 0.11);
+}
+
+.timeline-content:hover {
+    border-color: rgba(233, 120, 103, 0.4);
+}
+
+/* LANGUAGE BARS */
+
+.language-track {
+    background: #303A46;
+}
+
+.language-fill {
+    background: linear-gradient(
+        90deg,
+        #C66E60,
+        #E97867
+    );
+}
+
+/* EMPTY AND ERROR STATES */
+
+.loading,
+.error,
+.empty-state,
+.activity-empty {
+    background: #202B39;
+    border-color: rgba(242, 235, 221, 0.11);
 }

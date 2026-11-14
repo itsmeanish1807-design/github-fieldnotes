@@ -2,41 +2,34 @@
 
 :root {
     font-family: 'DM Sans', sans-serif;
-
-    color: #F4EDE0;
-    background: #14213D;
+    color: #F2EBDD;
+    background: #171D29;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    /* Core palette */
-    --bg: #14213D;
-    --bg-secondary: #192A49;
+    --bg: #171D29;
+    --bg-secondary: #1D2634;
+    --surface: #222D3B;
+    --surface-raised: #2A3543;
 
-    /* Surfaces */
-    --surface: #1C2B45;
-    --surface-raised: #263955;
-    --card: #1C2B45;
+    --card: #222D3B;
 
-    /* Borders */
-    --border: rgba(244, 237, 224, 0.12);
-    --border-light: rgba(244, 237, 224, 0.20);
+    --border: rgba(242, 235, 221, 0.12);
+    --border-light: rgba(242, 235, 221, 0.20);
 
-    /* Typography */
-    --text: #F4EDE0;
-    --muted: #B5C0D0;
-    --text-secondary: #B5C0D0;
+    --text: #F2EBDD;
+    --muted: #AAAFAF;
+    --text-secondary: #AAAFAF;
 
-    /* Accent */
-    --accent: #FF6B5B;
-    --accent-hover: #FF8275;
-    --accent-soft: rgba(255, 107, 91, 0.13);
+    --accent: #E97867;
+    --accent-hover: #F18B79;
+    --accent-soft: rgba(233, 120, 103, 0.12);
 
-    --danger: #FF8A80;
+    --danger: #F18B79;
 
-    /* Fonts */
     --font-heading: 'Manrope', sans-serif;
     --font-mono: 'DM Mono', monospace;
 
@@ -60,15 +53,10 @@ body {
     background:
         radial-gradient(
             ellipse at 85% 5%,
-            rgba(255, 107, 91, 0.09),
-            transparent 38%
+            rgba(233, 120, 103, 0.045),
+            transparent 35%
         ),
-        linear-gradient(
-            145deg,
-            #14213D 0%,
-            #172844 48%,
-            #14213D 100%
-        );
+        #171D29;
 
     color: var(--text);
 }
